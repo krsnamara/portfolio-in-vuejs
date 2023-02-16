@@ -5,7 +5,7 @@
                 <div class="profile">
                     <img src="../assets/profile-pic.jpeg" alt="">
                     <h3>Martin Fitzpatrick</h3>
-                    <p>Software Developover</p>
+                    <p>Software Developer</p>
                 </div>
                 <div class="social-links">
                     <div class="link">
