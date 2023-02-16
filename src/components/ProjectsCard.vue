@@ -24,9 +24,9 @@
                 <div class="projects-button">
                     <a href="/projects">Back to Top</a>
                 </div>
-                <div class="projects-button">
+                <!-- <div class="projects-button">
                     <a href="/post">Post</a>
-                </div>
+                </div> -->
             </div> 
         </div>
     </div>
