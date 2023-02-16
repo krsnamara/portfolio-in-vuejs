@@ -52,12 +52,20 @@
                             <label for="id">Project Link</label>
                             <input type="text" name="link" v-model="postData.link">
                         </div>
-                        <button type="submit" @click="PostProject()">Submit</button>
+                        <button class="btn" type="submit" @click="PostProject()">Submit</button>
                     </div>
                 </div>
+                <div class="button-container">
+                    <div class="projects-button">
+                        <a href="/home">Home</a>
+                    </div>
+                    <div class="projects-button">
+                        <a href="/projects">Projects</a>
+                    </div>
+                </div> 
+            </div>
             </div>
         </div>
-    </div>
     </template>
     
     <script>
@@ -122,79 +130,77 @@
         padding-top: 20px;
         /* width: 60%; */
     }
-        img{
-            height:20px;
-        }
-        .main-container{
-            display: flex;
-            flex-direction: row;
-            /* justify-content: center;
-            align-items: center; */
-            /* background-color: #28690F; */ /* green pallate */
-            background-color: #A9001B;
-            border-radius: 25px;
-            width: 60%;
-            box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
-        }
-        .container-one{
-            /* background-color: #6ABF46; */ /* green pallate */
-            background-color: #E09990;
-            padding: 2.5%;
-            width: 30%;
-            border-radius: 25px;
-        }
-        .profile img{
-            height: 10rem;
-            border-radius: 50%;
-        }
-        .link a{
-            text-decoration: none;
-            color: #2c3e50;
-            font-size: 10px;
-        }
-        .link img{
-            height: 3rem;
-        }
-        .link img:hover{
-            height: 3rem;
-            /* // filter:grayscale(100%); */
-            filter: invert(100%);
-        }
-        .container-two{
-            /* background-color:#6ABF46; */ /* green pallate */
-            background-color:#F3EED9;
-            margin: 2.5%;
-            width: 70%;
-            padding: 15px;
-            border-radius: 25px;
-            
-        }
-        .about-me{
-            text-align: left;
-            border-radius: 25px;
-        }
-        .logos img{
-            height: 3rem;
-        }
-        .button-container{
+    img{
+        height:20px;
+    }
+    .button-container{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+    }
+    .projects-button{
+        background-color: #005ca4;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .projects-button a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center;
+        align-items: center; */
+        /* background-color: #28690F; */ /* green pallate */
+        background-color: #A9001B;
+        border-radius: 25px;
+        width: 60%;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+    }
+    .container-one{
+        /* background-color: #6ABF46; */ /* green pallate */
+        background-color: #E09990;
+        padding: 2.5%;
+        width: 30%;
+        border-radius: 25px;
+    }
+    .profile img{
+        height: 10rem;
+        border-radius: 50%;
+    }
+    .link a{
+        text-decoration: none;
+        color: #2c3e50;
+        font-size: 10px;
+    }
+    .link img{
+        height: 3rem;
+    }
+    .link img:hover{
+        height: 3rem;
+        /* // filter:grayscale(100%); */
+        filter: invert(100%);
+    }
+    .container-two{
+        /* background-color:#6ABF46; */ /* green pallate */
+        background-color:#F3EED9;
+        margin: 2.5%;
+        width: 70%;
+        padding: 15px;
+        border-radius: 25px;
+        
+    }
+    .btn{
+        margin-top: 25px;
+        padding: 15px;
+        margin-left: 150px;
+    }
+    @media only screen and (max-width: 950px){
+        .main-container{
+            width: 95%;
         }
-        .projects-button{
-            background-color: #005ca4;
-            border-radius: 15px;
-            padding: 5px;
-            margin: 5px;
-        }
-        .projects-button a{
-            text-decoration: none;
-            color: #ffffff;
-        }
-        @media only screen and (max-width: 950px){
-            .main-container{
-                width: 95%;
-            }
-        }
+    }
     </style>

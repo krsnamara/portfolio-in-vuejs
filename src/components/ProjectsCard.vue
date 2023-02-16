@@ -17,6 +17,17 @@
                     <img src="https://www.svgrepo.com/show/273836/links-link.svg" alt="">
                 </a>
             </div>
+            <div class="button-container">
+                <div class="projects-button">
+                    <a href="/home">Home</a>
+                </div>
+                <div class="projects-button">
+                    <a href="/projects">Back to Top</a>
+                </div>
+                <div class="projects-button">
+                    <a href="/post">Post</a>
+                </div>
+            </div> 
         </div>
     </div>
     </template>
@@ -90,5 +101,21 @@
         .links img:hover{
             background-color: rgb(9, 9, 236, .5);
             border-radius: 20px;
+        }
+        .button-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .projects-button{
+            background-color: #005ca4;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .projects-button a{
+            text-decoration: none;
+            color: #ffffff;
         }
     </style>
