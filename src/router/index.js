@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainCard from '../components/MainCard.vue'
-import PostProject from '../components/PostProject.vue'
+import PostProjects from '../components/PostProjects.vue'
 import ProjectsCard from '../components/ProjectsCard.vue'
 
 const routes = [
@@ -17,7 +17,7 @@ const routes = [
   {
     path: '/post',
     name: 'Post',
-    component: PostProject
+    component: PostProjects
   },
 ]
 
