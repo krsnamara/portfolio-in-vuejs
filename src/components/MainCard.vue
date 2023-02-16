@@ -148,4 +148,106 @@
                 width: 95%;
             }
         }
+        @media only screen and (max-width: 450px){
+            *{
+                box-sizing: border-box;
+            }
+            .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        /* width: 60%; */
+    }
+        img{
+            height:20px;
+        }
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center;
+            align-items: center; */
+            /* background-color: #28690F; */ /* green pallate */
+            background-color:transparent;
+            border-radius: 0px;
+            width: 100%;
+            box-shadow:none;
+        }
+        .container-one{
+            /* background-color: #6ABF46; */ /* green pallate */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #E09990;
+            padding: 5%;
+            width: 100%;
+            border-radius: 0;
+            margin: 0;
+        }
+        .profile{
+            padding-left: 0%;
+            display: flex;
+            align-items: center;
+        }
+        .profile img{
+            height: 6rem;
+            border-radius: 50%;
+        }
+        .link a{
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 10px;
+        }
+        .link h2{
+            display: none;
+        }
+        .link img{
+            height: 2rem;
+        }
+        .link img:hover{
+            height: 3rem;
+            /* // filter:grayscale(100%); */
+            filter: invert(100%);
+        }
+        .social-links{
+            display: flex;
+            justify-content:flex-end;
+            padding-right: 4%;
+            gap: 10px;
+        }
+        .container-two{
+            /* background-color:#6ABF46; */ /* green pallate */
+            background-color:#F3EED9;
+            margin: 0%;
+            width: 100%;
+            padding: 8%;
+            /* padding: 2.5%; */
+            border-radius: 0;
+            /* margin: 0; */
+            
+        }
+        .about-me{
+            text-align: left;
+            border-radius: 25px;
+        }
+        .logos img{
+            height: 2rem;
+        }
+        .button-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .projects-button{
+            background-color: #005ca4;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .projects-button a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        }
     </style>

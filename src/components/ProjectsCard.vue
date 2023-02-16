@@ -118,4 +118,28 @@
             text-decoration: none;
             color: #ffffff;
         }
+        @media only screen and (max-width: 450px){
+            *{
+                box-sizing: border-box;
+            }
+            .project-card img{
+                height: auto;
+                max-width: 300px;
+            }
+            .project-card{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+            width: 520px;
+            height: fit-content;
+            flex-wrap: 0 0 40%;
+            justify-content:start;
+            align-items: center;
+            background-color: #F3EED9;
+            border-radius: 25px;
+            box-shadow: rgb(0, 0, 0, .24) 0px 3px 8px;
+        }
+
+        }
     </style>
