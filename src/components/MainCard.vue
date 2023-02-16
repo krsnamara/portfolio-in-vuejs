@@ -117,7 +117,7 @@
             margin: 2.5%;
             width: 70%;
             padding: 15px;
-            border-radius: 10%;
+            border-radius: 25px;
             
         }
         .about-me{

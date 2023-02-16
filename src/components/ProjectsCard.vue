@@ -1,24 +1,14 @@
 <template>
-    <!-- <div class="main-container">
-        <div class="project-card" v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items">
-            <h2>{{projectData.ProjectsArray[index].Title}}</h2>
-            <img :src="projectData.ProjectsArray[index].Image" alt=""> 
-            <p>{{ projectData.ProjectsArray[index].About}}</p>
-            <div class="links">
-                <a :href="projectData.ProjectsArray[index].Link1" target="_blank">
-                    <img src="https://www.svgrepo.com/show/68072/github-logo-face.svg" alt="">
-                </a>
-                <a :href="projectData.ProjectsArray[index].Link2" target="_blank">
-                    <img src="https://www.svgrepo.com/show/273836/links-link.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </div> -->
+    <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/post">Post Project</router-link>         |
+    <router-link to="/projects">My Projects</router-link>
+  </nav>
     <div class="main-container">
         <div class="project-card" v-for="(items, index) in lambdaReturnData.Items" v-bind:key="items">
             <h2>{{lambdaReturnData.Items[index].title}}</h2>
             <img :src="lambdaReturnData.Items[index].image" alt=""> 
-            <p>{{ lambdaReturnData.Items[index].detail}}</p>
+            <p class="detail-container">{{ lambdaReturnData.Items[index].detail}}</p>
             <div class="links">
                 <a :href="lambdaReturnData.Items[index].repo" target="_blank">
                     <img src="https://www.svgrepo.com/show/68072/github-logo-face.svg" alt="">
@@ -29,22 +19,13 @@
             </div>
         </div>
     </div>
-        <!-- This was a test before building out the lambdaReturnData cards
-    <div>
-        <button @click="GetProjects">Click</button>
-    </div>
-    
-    {{lambdaReturnData}} -->
     </template>
     
     <script>
     import axios from 'axios'
-    // import jsonData from "/projects.json"
-    // axios.defaults.withCredentials = false
     export default {
         data(){
             return{ 
-                // projectData: jsonData,
                 lambdaReturnData: {},
             }
         },
@@ -66,25 +47,34 @@
     
     <style scoped>
         .main-container{
-            margin-top: 5%;
+            /* margin-top: 5%; */
             display: flex;
-            /* flex-direction: column; */
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
         }
         .project-card{
+            display: flex;
+            flex-direction: column;
             margin: 10px;
             padding: 10px;
-            width: 60%;
+            width: 520px;
+            height: 700px;
             flex-wrap: 0 0 40%;
+            justify-content:start;
+            align-items: center;
             background-color: #F3EED9;
-            /* background-color: white; */
             border-radius: 25px;
             box-shadow: rgb(0, 0, 0, .24) 0px 3px 8px;
         }
         .project-card img{
-          height: 20rem;  
+          height: 20rem;
+          max-width: 520px;
+
+        }
+        .detail-container {
+            max-width:60%;
+            text-align: center;
         }
     
         .links{
@@ -100,6 +90,5 @@
         .links img:hover{
             background-color: rgb(9, 9, 236, .5);
             border-radius: 20px;
-            /* filter: invert(100%); */
         }
     </style>

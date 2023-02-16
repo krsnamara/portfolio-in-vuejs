@@ -22,7 +22,7 @@
                         </div>
                 </div>
             </div>
-            <div class="outer-wrapper">
+            <div class="container-two">
                 <div class="input-wrapper">
                     <div>
                         <h1>Lets Enter Our Latest Project</h1>
@@ -99,10 +99,12 @@
         background-color: #F3EED9;
         border-radius: 20px;
         stroke: black 2px solid;
-        width: 60%;
+        margin: 2.5%;
+        width: 70%;
+        padding: 15px;
         min-width: 400px;
         max-width: 450px;
-        padding-bottom: 25px;
+        /* padding-bottom: 25px; */
         display: flex;
         flex-direction: column;
     }
