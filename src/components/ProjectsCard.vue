@@ -19,7 +19,7 @@
             </div>
             <div class="button-container">
                 <div class="projects-button">
-                    <a href="/home">Home</a>
+                    <a href="/">Home</a>
                 </div>
                 <div class="projects-button">
                     <a href="/projects">Back to Top</a>
