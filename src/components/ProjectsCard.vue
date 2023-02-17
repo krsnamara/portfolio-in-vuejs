@@ -1,9 +1,9 @@
 <template>
-    <nav>
+    <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/post">Post Project</router-link>         |
     <router-link to="/projects">My Projects</router-link>
-  </nav>
+  </nav> -->
     <div v-if="loading"> 
         <div class="loading-container">
         <div class="loading">
