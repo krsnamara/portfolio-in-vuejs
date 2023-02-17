@@ -50,7 +50,7 @@
                             <a href="/projects">My Projects</a>
                         </div>
                         <div class="projects-button">
-                            <a href="">My Resume</a>
+                            <a href="/resume">My Resume</a>
                         </div>
                    </div> 
                 </div>

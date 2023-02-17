@@ -25,7 +25,12 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #6f30c7;
+  color: #ffffff;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #06e4f8;
 }
 
 nav a.router-link-exact-active {

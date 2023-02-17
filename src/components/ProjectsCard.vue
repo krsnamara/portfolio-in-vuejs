@@ -1,9 +1,8 @@
 <template>
-    <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/post">Post Project</router-link>         |
-    <router-link to="/projects">My Projects</router-link>
-  </nav> -->
+    <nav class="nav-wrapper">
+    <router-link to="/">home</router-link> |
+    <router-link to="/resume">resume</router-link>
+  </nav>
     <div v-if="loading"> 
         <div class="loading-container">
         <div class="loading">
@@ -33,9 +32,6 @@
                     <div class="projects-button">
                         <a href="/projects">Back to Top</a>
                     </div>
-                    <!-- <div class="projects-button">
-                        <a href="/post">Post</a>
-                    </div> -->
                 </div> 
             </div>
         </div>
@@ -72,6 +68,12 @@
     </script>
     
     <style scoped>
+        .nav-wrapper{
+            display: flex;
+            justify-content: space-around;
+            background-color: darkslateblue;
+            border-radius: 25px;
+        }
         .loading-container{
             margin-top: 50px;
             display: flex;
