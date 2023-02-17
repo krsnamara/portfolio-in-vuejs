@@ -4,30 +4,40 @@
     <router-link to="/post">Post Project</router-link>         |
     <router-link to="/projects">My Projects</router-link>
   </nav>
-    <div class="main-container">
-        <div class="project-card" v-for="(items, index) in lambdaReturnData.Items" v-bind:key="items">
-            <h2>{{lambdaReturnData.Items[index].title}}</h2>
-            <img :src="lambdaReturnData.Items[index].image" alt=""> 
-            <p class="detail-container">{{ lambdaReturnData.Items[index].detail}}</p>
-            <div class="links">
-                <a :href="lambdaReturnData.Items[index].repo" target="_blank">
-                    <img src="https://www.svgrepo.com/show/68072/github-logo-face.svg" alt="">
-                </a>
-                <a :href="lambdaReturnData.Items[index].link" target="_blank">
-                    <img src="https://www.svgrepo.com/show/273836/links-link.svg" alt="">
-                </a>
+    <div v-if="loading"> 
+        <div class="loading-container">
+        <div class="loading">
+            <div class="loader"></div>
+            <h1>Projects Loading From API</h1> 
+        </div>
+    </div>
+    </div>
+    <div  v-else>
+        <div class="main-container">
+            <div class="project-card" v-for="(items, index) in lambdaReturnData.Items" v-bind:key="items">
+                <h2>{{lambdaReturnData.Items[index].title}}</h2>
+                <img :src="lambdaReturnData.Items[index].image" alt=""> 
+                <p class="detail-container">{{ lambdaReturnData.Items[index].detail}}</p>
+                <div class="links">
+                    <a :href="lambdaReturnData.Items[index].repo" target="_blank">
+                        <img src="https://www.svgrepo.com/show/68072/github-logo-face.svg" alt="">
+                    </a>
+                    <a :href="lambdaReturnData.Items[index].link" target="_blank">
+                        <img src="https://www.svgrepo.com/show/273836/links-link.svg" alt="">
+                    </a>
+                </div>
+                <div class="button-container">
+                    <div class="projects-button">
+                        <a href="/">Home</a>
+                    </div>
+                    <div class="projects-button">
+                        <a href="/projects">Back to Top</a>
+                    </div>
+                    <!-- <div class="projects-button">
+                        <a href="/post">Post</a>
+                    </div> -->
+                </div> 
             </div>
-            <div class="button-container">
-                <div class="projects-button">
-                    <a href="/">Home</a>
-                </div>
-                <div class="projects-button">
-                    <a href="/projects">Back to Top</a>
-                </div>
-                <!-- <div class="projects-button">
-                    <a href="/post">Post</a>
-                </div> -->
-            </div> 
         </div>
     </div>
     </template>
@@ -38,16 +48,21 @@
         data(){
             return{ 
                 lambdaReturnData: {},
+                loading: true
             }
         },
         methods:{
             GetProjects(){
-                axios.get('https://9349h8hp52.execute-api.us-east-1.amazonaws.com/items').then(response => {
+                this.loading = true; // the loading begins
+                axios.get('https://9349h8hp52.execute-api.us-east-1.amazonaws.com/items')
+                .then(response => {
                     console.log(response)
                     this.lambdaReturnData.Items = response.data;
                 }).catch(err =>{
                     console.log(err);
-                })
+                }).finally(() => {
+                    this.loading = false;
+                }) // sets loading to false when request finished
             }
         },
         mounted(){
@@ -57,6 +72,34 @@
     </script>
     
     <style scoped>
+        .loading-container{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loading{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F3EED9;
+            border-radius: 25px;
+            width:250px;
+        }
+        .loader {
+        border: 16px solid #0a461c; /* Light grey */
+        border-top: 16px solid #0bda4d; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
         .main-container{
             /* margin-top: 5%; */
             display: flex;
