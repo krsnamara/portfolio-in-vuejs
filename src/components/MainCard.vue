@@ -45,14 +45,14 @@
                         <img src="https://www.svgrepo.com/show/331300/aws.svg" alt="">
                         <img src="https://www.svgrepo.com/show/369644/vue.svg" alt="">
                     </div>
-                   <div class="button-container">
+                    <div class="button-container">
                         <div class="projects-button">
                             <a href="/projects">My Projects</a>
                         </div>
                         <div class="projects-button">
                             <a href="/resume">My Resume</a>
                         </div>
-                   </div> 
+                    </div> 
                 </div>
             </div>
         </div>
@@ -73,92 +73,92 @@
         padding-top: 20px;
         /* width: 60%; */
     }
-        img{
-            height:20px;
-        }
-        .main-container{
-            display: flex;
-            flex-direction: row;
-            /* justify-content: center;
-            align-items: center; */
-            /* background-color: #28690F; */ /* green pallate */
-            background-color: #A9001B;
-            border-radius: 25px;
-            width: 60%;
-            box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
-        }
-        .container-one{
-            /* background-color: #6ABF46; */ /* green pallate */
-            background-color: #E09990;
-            padding: 2.5%;
-            width: 30%;
-            border-radius: 25px;
-        }
-        .profile img{
-            height: 10rem;
-            border-radius: 50%;
-        }
-        .link a{
-            text-decoration: none;
-            color: #2c3e50;
-            font-size: 10px;
-        }
-        .link img{
-            height: 3rem;
-        }
-        .link img:hover{
-            height: 3rem;
-            /* // filter:grayscale(100%); */
-            filter: invert(100%);
-        }
-        .container-two{
-            /* background-color:#6ABF46; */ /* green pallate */
-            background-color:#F3EED9;
-            margin: 2.5%;
-            width: 70%;
-            padding: 15px;
-            border-radius: 25px;
-            
-        }
-        .about-me{
-            text-align: left;
-            border-radius: 25px;
-        }
-        .logos img{
-            height: 3rem;
-        }
-        .button-container{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-        .projects-button{
-            background-color: #005ca4;
-            border-radius: 15px;
-            padding: 5px;
-            margin: 5px;
-        }
-        .projects-button a{
-            text-decoration: none;
-            color: #ffffff;
-        }
-        @media only screen and (max-width: 950px){
-            .main-container{
-                width: 95%;
-            }
-        }
-        @media only screen and (max-width: 450px){
-            *{
-                box-sizing: border-box;
-            }
-            .wrapper{
+    img{
+        height:20px;
+    }
+    .main-container{
         display: flex;
+        flex-direction: row;
+        /* justify-content: center;
+        align-items: center; */
+        /* background-color: #28690F; */ /* green pallate */
+        background-color: #A9001B;
+        border-radius: 25px;
+        width: 60%;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+    }
+    .container-one{
+        /* background-color: #6ABF46; */ /* green pallate */
+        background-color: #E09990;
+        padding: 2.5%;
+        width: 30%;
+        border-radius: 25px;
+    }
+    .profile img{
+        height: 10rem;
+        border-radius: 50%;
+    }
+    .link a{
+        text-decoration: none;
+        color: #2c3e50;
+        font-size: 10px;
+    }
+    .link img{
+        height: 3rem;
+    }
+    .link img:hover{
+        height: 3rem;
+        /* // filter:grayscale(100%); */
+        filter: invert(100%);
+    }
+    .container-two{
+        /* background-color:#6ABF46; */ /* green pallate */
+        background-color:#F3EED9;
+        margin: 2.5%;
+        width: 70%;
+        padding: 15px;
+        border-radius: 25px;
+        
+    }
+    .about-me{
+        text-align: left;
+        border-radius: 25px;
+    }
+    .logos img{
+        height: 3rem;
+    }
+    .button-container{
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-top: 20px;
-        /* width: 60%; */
     }
+    .projects-button{
+        background-color: #005ca4;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .projects-button a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    @media only screen and (max-width: 950px){
+        .main-container{
+            width: 95%;
+        }
+    }
+    @media only screen and (max-width: 450px){
+        *{
+            box-sizing: border-box;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+            /* width: 60%; */
+        }
         img{
             height:20px;
         }
@@ -249,5 +249,5 @@
             text-decoration: none;
             color: #ffffff;
         }
-        }
+    }
     </style>
