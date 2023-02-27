@@ -5,7 +5,7 @@
         <router-link to="/projects">projects</router-link>
     </nav>
                 <div class="resume-wrapper">
-                    <img class="resume" src="../assets/resume.jpg" alt="">
+                    <img class="resume" src="../assets/2-26-23.jpg" alt="">
                 </div>
     </template>
     
