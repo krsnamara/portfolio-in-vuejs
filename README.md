@@ -1,24 +1,29 @@
-# vue-portfolio
+# Portfolio in New Tech for Bootcamp Capstone: Independently learned in 3 day sprint.
+***
+## Description
+This app is a fullstack build with Vue.js Front End and an AWS serveless Lambda Function connecting a DynamoDB through an Http Gateway API deployed through Vercel. 
+***
+## Technologies Used
 
-## Project setup
-```
-npm install
-```
+[![My Skills](https://skillicons.dev/icons?i=html,css,vscode,js,git,github,vercel,&perline=4)](https://skillicons.dev)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- HTML5
+- CSS3
+- JavaScript
+- Vue.js
+- Git/Github
+- Vercel
 
-### Compiles and minifies for production
-```
-npm run build
-```
+***
+### Production version
 
-### Lints and fixes files
-```
-npm run lint
-```
+![production](/src/assets/production.png)
+***
+## Deployed Website
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[Click Here](https://martinportvue.vercel.app/) to visit deployed app! 
+***
+## Future Enhancements
+- Adding authentication for portfolio owner to login and add, edit and delete projects.
+- Creating an alter ego or fictional character to make a portfolio for.
+- Updating colors and adding some animation to make it more playful and a vibe.
