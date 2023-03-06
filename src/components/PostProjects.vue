@@ -3,23 +3,23 @@
         <div class="main-container">
             <div class="container-one">
                 <div class="profile">
-                    <img src="../assets/profile-pic.jpeg" alt="">
-                    <h3>Martin Fitzpatrick</h3>
-                    <p>Software Developover</p>
+                    <img src="../assets/aiportrait.png" alt="">
+                    <h3>Hip Von Burg</h3>
+                    <p>Blogger</p>
                 </div>
                 <div class="social-links">
                     <div class="link">
-                        <a href="https://github.com/krsnamara">
-                            <img src="https://www.svgrepo.com/show/68072/github-logo-face.svg" alt="">
+                        <a href="https://github.com/krsnamara" target="_blank" >
+                            <img src="../assets/github.png" alt="">
                             <h2>Github</h2>
                         </a>
-                        </div>
+                    </div>
                     <div class="link">
-                        <a href="https://www.linkedin.com/in/martinj-fitzpatrick/">
-                            <img src="https://www.svgrepo.com/show/390272/linkedin-linked-in.svg" alt="">
+                        <a href="https://www.linkedin.com/in/martinj-fitzpatrick/" target="_blank" >
+                            <img src="../assets/linkedin.png" alt="">
                             <h2>LinkedIn</h2>
                         </a>
-                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container-two">
@@ -29,38 +29,38 @@
                     </div>
                     <div class="container">
                         <div class="input-container">
-                            <label for="id">Project Id</label>
-                            <input type="text" name="id" v-model="postData.id">
+                            <label for="id">Id</label>
+                            <input type="text" name="id" v-model="postData.id" placeholder="write a number !">
                         </div>
                         <div class="input-container">
-                            <label for="id">Project Title</label>
-                            <input type="text" name="title" v-model="postData.title">
+                            <label for="id">What should we</label>
+                            <input type="text" name="title" v-model="postData.title" placeholder="call it?">
                         </div>
                         <div class="input-container">
-                            <label for="id">Project Detail</label>
-                            <input type="text" name="detail" v-model="postData.detail">
+                            <label for="id">Tell them some</label>
+                            <input type="text" name="detail" v-model="postData.detail" placeholder="details...">
                         </div>
                         <div class="input-container">
-                            <label for="id">Project Image</label>
-                            <input type="text" name="image" v-model="postData.image">
+                            <label for="id">What does it</label>
+                            <input type="text" name="image" v-model="postData.image" placeholder="look like?">
                         </div>
                         <div class="input-container">
-                            <label for="id">Project Repo</label>
-                            <input type="text" name="repo" v-model="postData.repo">
+                            <label for="id">Github</label>
+                            <input type="text" name="repo" v-model="postData.repo" placeholder="Repo">
                         </div>
                         <div class="input-container">
-                            <label for="id">Project Link</label>
-                            <input type="text" name="link" v-model="postData.link">
+                            <label for="id">What is the</label>
+                            <input type="text" name="link" v-model="postData.link" placeholder="URL">
                         </div>
                         <button class="btn" type="submit" @click="PostProject()">Submit</button>
                     </div>
                 </div>
                 <div class="button-container">
                     <div class="projects-button">
-                        <a href="/">Home</a>
+                        <a href="/">home</a>
                     </div>
                     <div class="projects-button">
-                        <a href="/projects">Projects</a>
+                        <a href="/projects">projects</a>
                     </div>
                 </div> 
             </div>
@@ -152,20 +152,18 @@
     .main-container{
         display: flex;
         flex-direction: row;
-        /* justify-content: center;
-        align-items: center; */
-        /* background-color: #28690F; */ /* green pallate */
-        background-color: #A9001B;
+        margin-top: 50px;
+        background-color: #01f6c5;
+        border: #7218F5 solid 5px;
         border-radius: 25px;
         width: 60%;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
     }
     .container-one{
-        /* background-color: #6ABF46; */ /* green pallate */
-        background-color: #E09990;
+        background-color: #97199e;
         padding: 2.5%;
         width: 30%;
-        border-radius: 25px;
+        border-radius: 20px;
     }
     .profile img{
         height: 10rem;

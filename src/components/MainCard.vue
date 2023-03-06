@@ -3,54 +3,42 @@
         <div class="main-container">
             <div class="container-one">
                 <div class="profile">
-                    <img src="../assets/profile-pic.jpeg" alt="">
-                    <h3>Martin Fitzpatrick</h3>
-                    <p>Software Developer</p>
+                    <img src="../assets/aiportrait.png" alt="">
+                    <h3>Hip Von Burg</h3>
+                    <p>Blogger</p>
                 </div>
                 <div class="social-links">
                     <div class="link">
-                        <a href="https://github.com/krsnamara">
-                            <img src="https://www.svgrepo.com/show/68072/github-logo-face.svg" alt="">
+                        <a href="https://github.com/krsnamara" target="_blank" >
+                            <img src="../assets/github.png" alt="">
                             <h2>Github</h2>
                         </a>
-                        </div>
+                    </div>
                     <div class="link">
-                        <a href="https://www.linkedin.com/in/martinj-fitzpatrick/">
-                            <img src="https://www.svgrepo.com/show/390272/linkedin-linked-in.svg" alt="">
+                        <a href="https://www.linkedin.com/in/martinj-fitzpatrick/" target="_blank" >
+                            <img src="../assets/linkedin.png" alt="">
                             <h2>LinkedIn</h2>
                         </a>
-                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="/post">
+                            <img src="../assets/post.svg" alt="">
+                            <h2>Post Projects</h2>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="container-two">
                 <div class="about-me">
-                    <h1>About Me</h1>
-                    <p>Experienced in JavaScript and Python based programming, with a background in construction and property maintenance in Brooklyn, NY. Possess strong skills in communication, function, and project management that help tech companies build beautiful, responsive applications. Committed empathetic sociable developer with a passion for creating positive energy towards goals and projects. Seeking a challenging work ethic that produces useful and well thought out solutions for everyday tasks. Efficient with time allocation and ability to break down larger projects into smaller goals to achieve great ends.</p>
+                    <h1>Read The Words Not the Meaning</h1>
+                    <p>I'm baby offal mukbang gochujang ethical stumptown, letterpress cloud bread thundercats polaroid bruh. Migas franzen yr chambray same listicle. Ascot roof party iPhone, gastropub hexagon four loko listicle. Fanny pack fashion axe quinoa, man bun swag everyday carry air plant hella food truck. Vice shaman tonx keytar kale chips glossier messenger bag chillwave.</p>
+                    <p>Mustache vexillologist neutra, grailed pop-up food truck biodiesel irony praxis poutine tousled. Activated charcoal meditation church-key grailed coloring book, bodega boys hella four loko microdosing pour-over. Lyft coloring book jianbing you probably haven't heard of them. Butcher cornhole gluten-free adaptogen venmo godard wolf fixie hot chicken cliche trust fund grailed. Humblebrag ethical affogato, small batch umami four dollar toast listicle ugh praxis taiyaki green juice copper mug. Poutine kombucha tacos, adaptogen pabst bodega boys swag edison bulb chia pug. Occupy kombucha yes plz, 90's meh chartreuse tbh hashtag shoreditch locavore.</p>
+                    <p>Dummy text? More like dummy thicc text, amirite?</p>
                 </div>
                 <div class="technology-section">
-                    <h1>Technologies Studied</h1>
-                    <div class="logos">
-                        <img src="https://www.svgrepo.com/show/473654/html5.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/473577/css3.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/310932/javascript.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/439173/git.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/426053/git.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/349404/heroku.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/306463/netlify.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/330398/express.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/473729/mongodb.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/424896/react-logo-programming-2.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/377688/text-x-python.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/353657/django-icon.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/331300/aws.svg" alt="">
-                        <img src="https://www.svgrepo.com/show/369644/vue.svg" alt="">
-                    </div>
                     <div class="button-container">
                         <div class="projects-button">
                             <a href="/projects">My Projects</a>
-                        </div>
-                        <div class="projects-button">
-                            <a href="/resume">My Resume</a>
                         </div>
                     </div> 
                 </div>
@@ -79,20 +67,18 @@
     .main-container{
         display: flex;
         flex-direction: row;
-        /* justify-content: center;
-        align-items: center; */
-        /* background-color: #28690F; */ /* green pallate */
-        background-color: #A9001B;
+        margin-top: 50px;
+        background-color: #01f6c5;
+        border: #7218F5 solid 5px;
         border-radius: 25px;
         width: 60%;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
     }
     .container-one{
-        /* background-color: #6ABF46; */ /* green pallate */
-        background-color: #E09990;
+        background-color: #97199e;
         padding: 2.5%;
         width: 30%;
-        border-radius: 25px;
+        border-radius: 20px;
     }
     .profile img{
         height: 10rem;
@@ -113,7 +99,7 @@
     }
     .container-two{
         /* background-color:#6ABF46; */ /* green pallate */
-        background-color:#F3EED9;
+        background-color:#11A88A;
         margin: 2.5%;
         width: 70%;
         padding: 15px;
@@ -178,7 +164,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-color: #E09990;
+            background-color: #01f6c5;
             padding: 5%;
             width: 100%;
             border-radius: 0;

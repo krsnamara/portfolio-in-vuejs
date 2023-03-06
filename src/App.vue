@@ -1,18 +1,13 @@
 <template>
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/post">Post Project</router-link>         |
-    <router-link to="/projects">My Projects</router-link>
-  </nav> -->
   <router-view/>
 </template>
 
 <style>
 body{
-  background-color: #2c3e50;
+  background-color: #A88308;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

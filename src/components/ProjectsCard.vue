@@ -1,7 +1,7 @@
 <template>
     <nav class="nav-wrapper">
     <router-link to="/">home</router-link> |
-    <router-link to="/resume">resume</router-link>
+    <router-link to="/post">post</router-link>
   </nav>
     <div v-if="loading"> 
         <div class="loading-container">
