@@ -17,7 +17,7 @@ This app is a fullstack build with Vue.js Front End and an AWS serveless Lambda 
 ***
 ### Production version
 
-![production](/src/assets/production.png)
+![production](/src/assets/product.png)
 ***
 ## Deployed Website
 
